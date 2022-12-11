@@ -53,7 +53,8 @@ to run the app
 ```bash
 python app.py
 ```
-should open it in the browser 
+should give you the address to open it in the browser 
+
 ## Docker
 to build docker image to need to open shell in the workink dir
 use the command
@@ -61,4 +62,7 @@ use the command
 ```bash
 docker build -t nlpapp .
 ```
-it will bulid an image containing all depadancies under name nlpapp , then run this image to make container
+it will bulid an image containing all depadancies under name nlpapp , then run this image to make a container
+
+# How to test model
+run the app then enter any arabic name in less than 100 chars it will show you weather it's a the prediction
