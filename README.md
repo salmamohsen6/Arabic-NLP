@@ -55,5 +55,10 @@ python app.py
 ```
 should open it in the browser 
 ## Docker
+to build docker image to need to open shell in the workink dir
+use the command
 
-
+```bash
+docker build -t nlpapp .
+```
+it will bulid an image containing all depadancies under name nlpapp , then run this image to make container
