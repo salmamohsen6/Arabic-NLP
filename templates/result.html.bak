@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='/styles.css') }}">
+</head>
+<body>
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Name correctness Analysis Result
+		</div>
+		<h2>name correctness confidence score</h2>
+		
+	</div>
+	</header>
+	<p style="color:blue;font-size:20;text-align: center;"><b>Results</b></p>
+	<div class="results">
+
+
+
+    {% if prediction > 0.5%}
+	<h2 style="color:green;">It's high confidence with: {{ prediction }}</h2>
+	{% else %}
+	<h2 style="color:red;">It's a low confidence with: {{ prediction }}</h2>
+	{% endif %}
+
+	</div>
+	
+	<a href="..">
+	<input type="submit" value="Go Back..">
+	</a>
+
+</body>
+</html>
