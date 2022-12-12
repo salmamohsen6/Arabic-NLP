@@ -1,6 +1,7 @@
 # Architecture
 
 I used CNN after converting the text into character-wise embeddings, it's a very good architecture for misspellings, You don't need to apply any text preprocessing, and very powerful
+
 code:
 
 https://www.kaggle.com/code/salmamohsen/names
