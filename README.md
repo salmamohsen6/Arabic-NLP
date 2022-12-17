@@ -57,6 +57,15 @@ python app.py
 should give you the address to open it in the browser 
 
 ## Docker
+you need to have 2 images( ubunto , and tensorflow image )
+to install them :
+
+```bash
+docker pull tensorflow/tensorflow 
+```
+```bash
+docker pull ubuntu 
+```
 to build docker image to need to open shell in the workink dir
 use the command
 
