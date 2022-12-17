@@ -77,4 +77,7 @@ docker build -t nlpapp .
 it will bulid an image containing all depadancies under name nlpapp , then run this image to make a container
 
 # How to test model
+1) download the code repo as zip
+2) extract it and rename the extracted directory to Arabic_NLP
+
 run the app then enter any arabic name in less than 100 chars it will show you weather it's a the prediction
