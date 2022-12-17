@@ -1,6 +1,7 @@
 from flask import Flask,render_template,request
 import tensorflow as tf
 import numpy as np
+import os
 
 
 def preprocess_single_input(input):
@@ -69,7 +70,15 @@ def load_saved_model():
     model.add(tf.keras.layers.Dense(100, activation='relu', kernel_initializer='he_uniform'))
 
     model.add(tf.keras.layers.Dense(1, activation='sigmoid'))
-    model.load_weights('D:\Deployement-of-NLP-Model-master\model_weights.h5')
+    
+    #loading model wights
+    dir_pth= os.path.dirname(os.path.realpath('__file__'))
+    model_pth='model_weights.h5'
+    abs_file_path = os.path.join(dir_pth, model_pth)
+    
+    model.load_weights(abs_file_path)
+    
+    
     return model
 
 def make_predicts(data):
