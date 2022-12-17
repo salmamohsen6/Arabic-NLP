@@ -8,9 +8,9 @@ RUN apk add --no-cache --update python3 && \
 	pip install --upgrade pip
 	
 FROM tensorflow/tensorflow
-WORKDIR /app
+WORKDIR /Arabic_NLP
 
-COPY . /app  
+COPY . /Arabic_NLP  
 
 
 RUN pip install -r requirements.txt
