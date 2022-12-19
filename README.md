@@ -6,6 +6,10 @@ code:
 
 https://www.kaggle.com/code/salmamohsen/names
 
+
+the gerateed dataset is saed to csv file named data
+
+
 I used 6 convolution layers:
 
 Layer|output Feature|Kernel|Pool|
